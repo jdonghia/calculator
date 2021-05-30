@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="calculator__screen">
+            <div class="screen__numbers"></div>
+        </div>
+        <div class="calculator__row">
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">7</button>
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">8</button>
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">9</button>
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">/</button>
+        </div>
+        <div class="calculator__row">
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">4</button>
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">5</button>
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">6</button>
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">*</button>
+        </div>
+        <div class="calculator__row">
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">1</button>
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">2</button>
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">3</button>
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">-</button>
+        </div>
+        <div class="calculator__row">
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">0</button>
+            <button onclick="c.recoverValue(event.target.textContent)" class="calculator__button">+</button>
+            <button onclick="c.recoverResult()" class="calculator__button calculator__button--equal">=</button>
+        </div>
+    </div>
+    <script src="Calculator.js"></script>
+    <script src="CalculatorController.js"></script>
+    <script src="CalculatorView.js"></script>
+    <script src="CalculatorHelper.js"></script>
+
+    <script>
+        c = new CalculatorController();
+    </script>
+</body>
+
+</html>
